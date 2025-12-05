@@ -18,3 +18,6 @@ F_H = atoms_H.get_forces()             # array (1, 3) en eV/Å
 
 print("Energía H:", E_H, "eV")
 print("Fuerzas H:\n", F_H, "eV/Å")
+
+descriptor = calc.get_descriptors(atoms_H)
+print("Descriptor:\n", descriptor)
