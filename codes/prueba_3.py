@@ -4,6 +4,7 @@ from mace.calculators import mace_mp
 # 1. Construimos la molécula H2
 atoms_H2 = build.molecule('CO2')  # 2 átomos, con una distancia de enlace razonable
 
+
 print(atoms_H2.get_angle(0, 1, 2))
 
 calc = mace_mp(model="small", device="cpu")
